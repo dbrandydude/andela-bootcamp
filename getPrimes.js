@@ -4,7 +4,9 @@ function getPrimes(n) {
         if (!prime[counter]) {
             // if n is a prime number, add n to primes
             primes.push(counter);
-
+            for (let i = counter << 1; i <= n; i += counter) {
+                prime[i] = true;
+            }
         }
     }
     return primes;
