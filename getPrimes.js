@@ -1,4 +1,6 @@
-function getPrimes(n) {
+"use strict";
+
+const getPrimes = (n) => {
     let prime = [], primes = [];
     for (let counter = 2; counter <= n; ++counter) {
         if (!prime[counter]) {
@@ -10,4 +12,4 @@ function getPrimes(n) {
         }
     }
     return primes;
-}
+};
